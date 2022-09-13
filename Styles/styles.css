@@ -785,3 +785,9 @@ footer span{
   margin-top: 1em;
   margin-bottom: 1em;
   }
+
+
+  .row {
+    display: flex;
+    justify-content:space-between;
+  }
