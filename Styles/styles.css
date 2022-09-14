@@ -69,16 +69,16 @@
 .grid_index {
   display:grid;
   grid-template-areas:
-  "header_index header_index"
+  "navbar navbar "
   "login-box login-box"
   "pieDePagina pieDePagina";
   grid-template-columns:1fr 1fr;
-  grid-template-rows:1fr 400px 1fr;
+  grid-template-rows: 60px 400px 1fr;
   height: 100vh;
   background-image: url(../image/fondo\ minimalista.jpeg);
 }
-.header_index {
-  grid-area: header_index;
+.navbar {
+  grid-area: navbar;
 }
 
 .login_box {
@@ -95,30 +95,13 @@
 /* NAV */
 
 
-.cabecera__menu {
-  display: flex;
-  justify-content: flex-end;
-  column-gap: 10px;
-  padding-right: 20px;
-  align-self: center;
-  
-  align-content: center;
-  
-  
-}
+
 nav ul li a{
   color: var(--primary);
   font-size: 15px;
 }
 
-.navContacto {
-  align-items: center;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-self: center;
-}
+
 
 
 
@@ -347,10 +330,6 @@ footer {
 
 
 
-.header_galeria nav ul a {
-  color:var(--text-color);
-  align-items: center;
-}
 
 
 
@@ -370,19 +349,19 @@ footer {
 .grid_contacto {
   display: grid;
   grid-template-areas:
-  "nav_contacto nav_contacto"
+  "navbar navbar"
   "text_contacto formulario"
   "pieDePagina pieDePagina";
   grid-template-columns:1fr 1fr;
-  grid-template-rows:  1fr 3fr 20px;
+  grid-template-rows: 70px 3fr 20px;
   height: 100vh;
   background-color: var(--secondary);
 
 }
 
 
-header {
-  grid-area: nav_contacto;
+.navbar {
+  grid-area: navbar;
 }
 .text_contacto {
   grid-area: text_contacto;
@@ -396,17 +375,6 @@ header {
 
 
 /* HEADER CONTACTO */
-
-
-
-.cabecera__menu__contacto {
-  display: flex;
-  justify-content: flex-end;
-  column-gap: 10px;
-  padding-right: 20px;
-  align-items:center;
-  height:auto;
-}
 
 
 
