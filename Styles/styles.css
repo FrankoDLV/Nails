@@ -322,16 +322,17 @@ footer {
   height: 50px;
 }
 
-.pieDePagina__redes a {
-  margin: 0%;
-  padding: 0%;
-  justify-content: space-around;
-}
-.pieDePagina__redes {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
 
+.pieDePagina__redes  {
+  
+  display: flex;
+  column-gap: var(--spacing-large);
+}
+
+.pieDePagina__redes a {
+  padding: 0;
+  margin: 0;
+  
 }
 
   
@@ -736,34 +737,33 @@ footer span{
 /* SERVICIO  */
 
 .body_servicio {
-  background-color: rgb(219, 209, 209); }
+  background-color: rgb(196, 185, 185); }
   
-/* .container div {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  
-}
-
-.card-body {
-  text-align: center;
-  font-size: var(--text-medium);
-  
-}
-
-.card div {
-  font-family: var(--font-title);
-  background-color: var(--secondary);
-  
-} */
-
-
-/* .container {
+.row {
   display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
 
-} */
+.card {
+  background-color: rgb(222, 222, 202);
+  font-size: var(--spacing-small);
+}
+.card h5 {
+  font-size: 2.8rem;
+  color: #000;
+  
+}
 
 
-
+.btn {
+  font-size: 1.2rem;
+}
 
 
 
@@ -771,11 +771,30 @@ footer span{
 
 /* GALERIA  */
 
-.galeriaCarrusel {
-  
-  display: flex;
-  width: 50em;
+
+.grid__galeria {
+  background-image: url(../image/coffe\ nails.jpg);
 }
+
+.galeriaCarrusel div {
+  justify-content:center;
+  width: 40rem;
+  
+}
+
+
+
+
+/* ESTA SECCION DE COLOR GRIS. DEBERIA IR BIEN TRANSPARENTE, COSA QUE SE VEA LA IMAGEN DE FONDO
+PERO NO SE HACERLO, ME AFECTA A TODO ! IMAGEN BOTONES ETC.. 
+
+.galeriaCarrusel {
+  background-color: rgb(158, 158, 158); 
+} */
+
+
+
+
 
 
 .galeriaCarrusel{
@@ -787,7 +806,4 @@ footer span{
   }
 
 
-  .row {
-    display: flex;
-    justify-content:space-between;
-  }
+  
